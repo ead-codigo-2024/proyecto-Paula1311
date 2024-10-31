@@ -9,7 +9,6 @@
 
 /* Estilo global para los párrafos */
 p {
-    font-size: 16px;
     line-height: 1.8;
     color: #333;
     margin-bottom: 20px;
@@ -191,10 +190,13 @@ footer {
     h2 {
         font-size: 35px;
     }
+    p {
+        font-size: 20px; 
+    }
 }
 
 /* Estilos para pantallas medianas */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 300px) and (max-width: 1080px) {
     .hero img {
         width: 100%;
     }
@@ -213,7 +215,11 @@ footer {
         font-size: 80px; /* Tamaño intermedio en pantallas medianas */
     }
     h2 {
-        font-size: 80px;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 30px; 
     }
     
     .nav-links {
@@ -225,7 +231,7 @@ footer {
 }
 
 /* Estilos para pantallas grandes */
-@media (min-width: 1025px) {
+@media (min-width: 1080px) {
     .hero img {
         width: 100%;
     }
@@ -241,10 +247,14 @@ footer {
     }
 
     h1 {
-        font-size: 200px; /* Tamaño completo en pantallas grandes */
+        font-size: 150px; /* Tamaño completo en pantallas grandes */
     }
     h2 {
-        font-size: 100px;
+        font-size: 70px;
+    }
+
+    p {
+        font-size: 50px; 
     }
 }
 /* Estilos del menú de hamburguesa */
