@@ -189,7 +189,7 @@ footer {
         font-size: 30px; /* Reduce tamaño en pantallas pequeñas */
     }
     h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -264,7 +264,7 @@ footer {
 }
 
 /* Ocultar el menú en pantallas pequeñas */
-@media (max-width: 300px) {
+@media (max-width: 1050px) {
     .nav-links {
         display: none;
         flex-direction: column;
