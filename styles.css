@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
 }
 
 /* Estilo global para los párrafos */
@@ -16,6 +17,9 @@ p {
     text-align: center;
 }
 
+.strong{
+    font-family: "Cormorant Garamond", serif;
+}
 
 /* Estilo del header */
 header {
@@ -159,3 +163,38 @@ footer {
 }
 
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .content p {
+        font-size: 1rem; /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero img {
+        width: 80%;
+    }
+    .content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .hero img {
+        width: 60%;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+}
