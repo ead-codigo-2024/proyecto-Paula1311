@@ -150,13 +150,13 @@ footer {
 }
 
 /* Estilo para hacer el texto responsivo */
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     .content {
         padding: 15px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .content {
         padding: 10px;
     }
@@ -164,7 +164,7 @@ footer {
 
 
 /* Estilos para pantallas pequeñas */
-@media  {
+@media (max-width: 300px) {
     nav ul {
         display: flex;
         flex-direction: column;
@@ -186,10 +186,10 @@ footer {
     }
 
     h1 {
-        font-size: 50px; /* Reduce tamaño en pantallas pequeñas */
+        font-size: 30px; /* Reduce tamaño en pantallas pequeñas */
     }
     h2 {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 
@@ -264,7 +264,7 @@ footer {
 }
 
 /* Ocultar el menú en pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     .nav-links {
         display: none;
         flex-direction: column;
