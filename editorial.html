@@ -9,66 +9,82 @@
 <body>
     <header>
         <nav>
-            <img src="logo bazar.png" alt="Logo de Harper's Bazaar" width="400" height="90">
+            <br>
+            <img src="logo bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
             <br>
             <br>
             <br>
+
+            <!-- Botón de menú hamburguesa -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
             <ul class="nav-links">
                 <li><a href="index.html" class="home-link">Home</a></li>
-                <li><a href="editorial.html"class="home-link">Editorial</a></li>
-                <li><a href="moda.html"class="home-link">El Estilo</a></li>
-                <li><a href="moda.html"class="home-link">Icono</a></li>
-                <li><a href="moda.html"class="home-link">Moda</a></li>
-                <li><a href="belleza.html"class="home-link">Belleza</a></li>
-                <li><a href="editorial.html"class="home-link">Agenda</a></li>
-                <li><a href="celebridades.html"class="home-link">Celebridades</a></li>
-                <li><a href="lista.html"class="home-link">La LISTA</a></li>
-                <li><a href="lista.html"class="home-link">Mi Fabulosa Vida</a></li>
-                <li><a href="lista.html"class="home-link">Horóscopo</a></li>
+                <li><a href="editorial.html" class="home-link">Editorial</a></li>
+                <li><a href="moda.html" class="home-link">El Estilo</a></li>
+                <li><a href="moda.html" class="home-link">Icono</a></li>
+                <li><a href="moda.html" class="home-link">Moda</a></li>
+                <li><a href="belleza.html" class="home-link">Belleza</a></li>
+                <li><a href="editorial.html" class="home-link">Agenda</a></li>
+                <li><a href="celebridades.html" class="home-link">Celebridades</a></li>
+                <li><a href="lista.html" class="home-link">La LISTA</a></li>
+                <li><a href="lista.html" class="home-link">Mi Fabulosa Vida</a></li>
+                <li><a href="lista.html" class="home-link">Horóscopo</a></li>
             </ul>
         </nav>
     </header>
+    
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="editorial-bg.jpg" alt="Fondo editorial">
+    <div class="hero-text">
+        <h2>Moda Extrema</h2>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="editorial-bg.jpg" alt="Fondo editorial">
-        <div class="hero-text">
-            <h2>Moda Extrema</h2>
-        </div>
+<!-- Sección del Editorial -->
+<section class="article-card">
+    <img src="editora.png" alt="Foto del editor" class="editor-img">
+
+    <section class="content">
+        <p>
+            <strong>Harper's Bazaar Chile</strong> se ha consolidado como la revista emblema de la moda gracias a todo un equipo creativo que en cada edición derrocha lo mejor de sí para conseguir páginas que marquen hitos. Por supuesto, en nuestros especiales publicados en abril y septiembre de cada año, esta visión se refuerza aún más.
+        </p>
+        <p>
+            La idea central es llegar hasta los lugares más majestuosos de este país para presentar las tendencias que traen las casas de diseño más importantes —esta vez y de manera inédita—, incluso Chanel viajó en nuestras maletas hasta un recóndito lugar del lago Tagua Tagua. Y es que el desafío de esta revista era especial: conseguir fotografías que fueran referentes para nuestras lectoras y el mercado, y también que estuvieran cargadas de simbolismos.
+        </p>
+        <p>
+            Así fue como surgió la idea de contar con algunas imágenes donde <em>Lágrimas de Luna</em> —empresa creada y dirigida por Jacqueline Domeyko para rescatar el arte ancestral de la platería mapuche y así darle cabida laboral a artesanos que solo consiguen este trabajo magistral como herencia a través de sus ancestros— pudiese fusionarse con diseños de moda de relevancia. Sí, porque justamente el estilo propio se consigue al unir líneas creativas de manera inesperada.
+        </p>
+        <p>
+            Por supuesto, el lugar para conseguir una misión de estas características debía ser único. <strong>Barraco Lodge</strong> reunía estas características al estar inserto entre los bosques, ríos y lagos más salvajes del sur de Chile. Nuestro equipo de producción se trasladaba en helicóptero y lanchas a locaciones perdidas, donde eran recibidos por cascadas alucinantes, uniones de rocas que parecían de fantasía y ríos cristalinos que debieron atravesar con los pies congelados y la modelo sobre los hombros. 
+        </p>
+        <p>
+            Parece fácil y divertido. Sin embargo, fue intenso, a ratos demasiado extremo; solo cobraba sentido al mirar las imágenes que estaban siendo capturadas gracias al enorme esfuerzo de todos, incluida la icónica modelo argentina <strong>Romina Lanaro</strong>, a quien ni siquiera el frío ni las condiciones más hostiles lograron derribar. ¡Una grande!
+        </p>
+        <p>
+            Hoy, convido a empaparse de la infinita energía que transmite cada imagen de nuestro especial de moda. No seríamos Bazaar si no sorprendiéramos. <strong>Bienvenida a la edición más fascinante.</strong>
+        </p>
     </section>
 
-    <!-- Sección del Editorial -->
-    <section class="article-card">
-        <img src="editora.png" alt="Foto del editor" class="editor-img">
-
-        <section class="content">
-            <p>
-                <strong>Harper's Bazaar Chile</strong> se ha consolidado como la revista emblema de la moda gracias a todo un equipo creativo que en cada edición derrocha lo mejor de sí para conseguir páginas que marquen hitos. Por supuesto, en nuestros especiales publicados en abril y septiembre de cada año, esta visión se refuerza aún más.
-            </p>
-            <p>
-                La idea central es llegar hasta los lugares más majestuosos de este país para presentar las tendencias que traen las casas de diseño más importantes —esta vez y de manera inédita—, incluso Chanel viajó en nuestras maletas hasta un recóndito lugar del lago Tagua Tagua. Y es que el desafío de esta revista era especial: conseguir fotografías que fueran referentes para nuestras lectoras y el mercado, y también que estuvieran cargadas de simbolismos.
-            </p>
-            <p>
-                Así fue como surgió la idea de contar con algunas imágenes donde <em>Lágrimas de Luna</em> —empresa creada y dirigida por Jacqueline Domeyko para rescatar el arte ancestral de la platería mapuche y así darle cabida laboral a artesanos que solo consiguen este trabajo magistral como herencia a través de sus ancestros— pudiese fusionarse con diseños de moda de relevancia. Sí, porque justamente el estilo propio se consigue al unir líneas creativas de manera inesperada.
-            </p>
-            <p>
-                Por supuesto, el lugar para conseguir una misión de estas características debía ser único. <strong>Barraco Lodge</strong> reunía estas características al estar inserto entre los bosques, ríos y lagos más salvajes del sur de Chile. Nuestro equipo de producción se trasladaba en helicóptero y lanchas a locaciones perdidas, donde eran recibidos por cascadas alucinantes, uniones de rocas que parecían de fantasía y ríos cristalinos que debieron atravesar con los pies congelados y la modelo sobre los hombros. 
-            </p>
-            <p>
-                Parece fácil y divertido. Sin embargo, fue intenso, a ratos demasiado extremo; solo cobraba sentido al mirar las imágenes que estaban siendo capturadas gracias al enorme esfuerzo de todos, incluida la icónica modelo argentina <strong>Romina Lanaro</strong>, a quien ni siquiera el frío ni las condiciones más hostiles lograron derribar. ¡Una grande!
-            </p>
-            <p>
-                Hoy, convido a empaparse de la infinita energía que transmite cada imagen de nuestro especial de moda. No seríamos Bazaar si no sorprendiéramos. <strong>Bienvenida a la edición más fascinante.</strong>
-            </p>
-        </section>
-
-        <p class="firma">Andreé</p>
-    </section>
-
+    <p class="firma">Andreé</p>
+</section>
+    
     <footer>
-        <p>&copy; 2024 Harper's Bazaar Chile - Todos los derechos reservados</p>
+        <p>&copy; 2024 Revista. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+
+    
 </body>
 </html>
