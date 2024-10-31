@@ -186,17 +186,17 @@ footer {
     }
 
     h1 {
-        font-size: 48px; /* Reduce tamaño en pantallas pequeñas */
+        font-size: 50px; /* Reduce tamaño en pantallas pequeñas */
     }
     h2 {
-        font-size: 24px;
+        font-size: 70px;
     }
 }
 
 /* Estilos para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero img {
-        width: 80%;
+        width: 100%;
     }
     .content p {
         font-size: 1.1rem;
