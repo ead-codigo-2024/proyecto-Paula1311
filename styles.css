@@ -177,6 +177,20 @@ footer {
     .content p {
         font-size: 1rem; /* Ajusta el tamaño del texto para dispositivos móviles */
     }
+
+    .hero-text {
+        padding: 15px;
+        font-size: 1.2rem;
+        width: 80%; /* Ocupa un 80% del ancho en pantallas pequeñas */
+        max-width: 90%; /* Limita el ancho máximo */
+    }
+
+    h1 {
+        font-size: 48px; /* Reduce tamaño en pantallas pequeñas */
+    }
+    h2 {
+        font-size: 24px;
+    }
 }
 
 /* Estilos para pantallas medianas */
@@ -187,6 +201,27 @@ footer {
     .content p {
         font-size: 1.1rem;
     }
+
+    .hero-text {
+        padding: 20px;
+        font-size: 1.5rem;
+        width: 70%; /* Ocupa un 70% del ancho en pantallas medianas */
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 100px; /* Tamaño intermedio en pantallas medianas */
+    }
+    h2 {
+        font-size: 36px;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /* Estilos para pantallas grandes */
@@ -196,5 +231,54 @@ footer {
     }
     .content p {
         font-size: 1.2rem;
+    }
+
+    .hero-text {
+        padding: 30px;
+        font-size: 2rem;
+        width: 60%; /* Ocupa un 60% del ancho en pantallas grandes */
+        max-width: 70%;
+    }
+
+    h1 {
+        font-size: 200px; /* Tamaño completo en pantallas grandes */
+    }
+    h2 {
+        font-size: 60px;
+    }
+}
+/* Estilos del menú de hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Ocultar el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Mostrar el menú al activar el toggle */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Mostrar el icono de menú */
+    .menu-toggle {
+        display: flex;
     }
 }
