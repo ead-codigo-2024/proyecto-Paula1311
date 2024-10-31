@@ -150,82 +150,135 @@ footer {
 }
 
 /* Estilo para hacer el texto responsivo */
-/* Estilo general adaptable */
-.content {
-    padding: 3vw; /* Espaciado adaptable al ancho de la ventana */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
 }
 
-/* Imágenes y texto en la sección hero */
-.hero img {
-    width: 100%;
-    height: auto;
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 500px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .content p {
+        font-size: 1rem; /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
+
+    .hero-text {
+        padding: 15px;
+        font-size: 1.2rem;
+        width: 80%; /* Ocupa un 80% del ancho en pantallas pequeñas */
+        max-width: 90%; /* Limita el ancho máximo */
+    }
+
+    h1 {
+        font-size: 50px; /* Reduce tamaño en pantallas pequeñas */
+    }
+    h2 {
+        font-size: 70px;
+    }
 }
 
-.hero-text {
-    padding: 2vw;
-    font-size: clamp(1.2rem, 2.5vw, 2rem); /* Tamaño de texto adaptable */
-    width: 80%;
-    max-width: 90%;
+/* Estilos para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero img {
+        width: 100%;
+    }
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-text {
+        padding: 20px;
+        font-size: 1.5rem;
+        width: 70%; /* Ocupa un 70% del ancho en pantallas medianas */
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 100px; /* Tamaño intermedio en pantallas medianas */
+    }
+    h2 {
+        font-size: 36px;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 }
 
-/* Tamaños de fuente adaptables */
-h1 {
-    font-size: clamp(3rem, 10vw, 6rem); /* Se adapta a diferentes tamaños de pantalla */
-    text-align: center;
-}
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .hero img {
+        width: 100%;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
 
-h2 {
-    font-size: clamp(2.5rem, 8vw, 5rem); /* Tamaño adaptable para h2 */
-    text-align: center;
-}
+    .hero-text {
+        padding: 30px;
+        font-size: 2rem;
+        width: 60%; /* Ocupa un 60% del ancho en pantallas grandes */
+        max-width: 70%;
+    }
 
-.content p {
-    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Ajusta el tamaño del texto */
+    h1 {
+        font-size: 200px; /* Tamaño completo en pantallas grandes */
+    }
+    h2 {
+        font-size: 80px;
+    }
 }
-
-/* Menú de navegación responsivo */
-.nav-links {
-    display: none; /* Oculto por defecto */
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 1vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links.active {
-    display: flex; /* Mostrar menú cuando está activo */
-}
-
-.nav-links li {
-    margin: 10px 0;
-}
-
-/* Menú de hamburguesa */
+/* Estilos del menú de hamburguesa */
 .menu-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     cursor: pointer;
     margin-top: 10px;
 }
 
 .menu-toggle span {
-    width: 5vw;
-    height: 0.4vw;
+    width: 25px;
+    height: 3px;
     background-color: #ffffff;
-    margin: 0.6vw 0;
+    margin: 4px 0;
     transition: 0.3s;
 }
 
+/* Ocultar el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Mostrar el menú al activar el toggle */
+    .nav-links.active {
+        display: flex;
+    }
 
+    /* Mostrar el icono de menú */
+    .menu-toggle {
+        display: flex;
+    }
+}
