@@ -1,0 +1,161 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo global para los párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+}
+
+
+/* Estilo del header */
+header {
+    background-color: #391131;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Efecto hover solo para el enlace 'Home' */
+.home-link:hover {
+    color: #f9674d; /* Cambia el color al que prefieras */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Cormorant SC", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 200px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Cormorant SC", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Estilo de la cuadrícula de artículos */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.article-card {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+
+.article-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+
+/* Estilos para la sección de contenido */
+.content {
+    max-width: 800px;
+    margin: 20px auto; /* Centra el contenido con márgenes automáticos */
+    padding: 60px;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 1.8;
+    color: #333;
+    text-align: center; /* Centra el texto */
+}
+
+.content2 {
+    max-width: 800px;
+    margin: 20px auto; /* Centra el contenido con márgenes automáticos */
+    padding: 20px;
+    font-family: 'Arvo', sans-serif; /* Aplica una fuente de Google Fonts */
+    line-height: 1.8;
+    color: #333;
+    text-align: right; /* Centra el texto */
+}
+
+/* Estilo para hacer el texto responsivo */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+}
+
+
