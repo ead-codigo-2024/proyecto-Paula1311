@@ -112,13 +112,14 @@ h2 {
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #000000;
     color: #fffefe; 
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
     line-height: 1.6;
+    
 }
 
 /* Sección de contenido */
