@@ -164,7 +164,7 @@ footer {
 
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 500px) {
+@media  {
     nav ul {
         display: flex;
         flex-direction: column;
