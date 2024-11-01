@@ -231,3 +231,34 @@ h2 {
         display: flex;
     }
 }
+
+.content img {
+    width: 100%;
+    max-width: 600px; /* Ajusta este tamaño máximo según sea necesario */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de responsividad */
+@media (max-width: 768px) {
+    .content img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content img {
+        max-width: 100%;
+    }
+}
