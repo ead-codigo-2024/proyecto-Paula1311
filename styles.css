@@ -89,6 +89,11 @@ h2 {
     margin-bottom: 10px;
 }
 
+.subtitulo{
+    font-size: 40px;
+
+}
+
 /* Estilo de la cuadrícula de artículos */
 
 .articles-grid {
@@ -201,7 +206,7 @@ h2 {
     h2 {
         font-size: 60px;
     }
-}
+   
 
 /* Menú de hamburguesa */
 .menu-toggle {
