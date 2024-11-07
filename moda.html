@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <br>
             <img src="logo bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
-            <br>
-            <br>
-            <br>
 
             <!-- Botón de menú hamburguesa -->
             <div class="menu-toggle" onclick="toggleMenu()">
@@ -38,3 +35,48 @@
             </ul>
         </nav>
     </header>
+
+    <div class="content">
+        <h2>El nuevo LUJO</h2>
+        <p>En medio de una sociedad que repudia las consecuencias del fast fashion, nace un nuevo concepto. Bazaar realizó una selección de las cuatro marcas chilenas que están replanteando la moda hacia una visión más holística.</p>
+        <p><em>Por Camila Alessandri K.</em></p>
+        <p>
+            Vivimos en una sociedad que prefiere curar antes que prevenir. Nuestro motor de cambio, lamentablemente, se produce luego de alguna catástrofe o accidente. La industria de la moda necesitó que 1.300 personas murieran en un taller textil en Bangladesh para demostrar que algo malo estaba pasando; los precios bajos y la producción en masa, en realidad, estaban teniendo un gran costo humano y ambiental. Y si eso no conmueve a muchos, Emma Watson logró hacer ruido con su sencillo vestido bicolor que utilizó en la última gala del MET. La actriz lució un vestido de Calvin Klein elaborado con un hilo conocido como Newlife, que se consigue a través del reciclaje de botellas de plástico. Otros detalles de la prenda se confeccionaron en algodón y seda orgánica.
+        </p>
+        <p>
+            "La industria de la moda es la mayor fuente de contaminación de agua en el planeta. Tiene un impacto ambiental y humano tan grande que para mí ya no es suficiente que la prenda se vea bella, sino que quiero tener la certeza de que no estoy dejando una huella negativa", sentenció Watson en su discurso.
+        </p>
+        <p>
+            No solo el suministro de agua es un acto de crítica de esta industria. También ha sido cuestionada por sus altas emisiones de carbono, sus políticas salariales y condiciones de trabajo, la poca utilización de energías renovables, el uso de pieles animales, el mínimo control de sus cadenas de suministros, la poca transparencia con que manejan algunos aspectos del negocio y la casi nula elección de materias primas sustentables.
+        </p>
+        <p>
+            Esta realidad no deja mucho de responsabilidad a nuestro país. Como revela la periodista Sofía Calvo en su libro <em>El nuevo vestir</em>, el 78% de la ropa y el 85% del calzado en Chile es importado desde China, donde las malas prácticas son frecuentes. Las consecuencias del fast fashion están prendiendo las alarmas no solo de los consumidores, sino también de las casas de moda en todo el mundo. Bajo esta perspectiva es que nace una nueva mirada del pensar en lujo, como una revalorización de lo artesanal, el uso de fibras naturales, el comercio en redes y el respeto a lo atemporal.
+        </p>
+        <p>
+            <strong>CASA LAPORTE</strong> Su dueña, Carolina Aguirre, inició este proyecto en 2008 luego de pasar siete meses estudiando en The Oslo School of Architecture and Design. Este viaje a Europa le permitió encontrar las piezas que hoy forman el stock de Casa Laporte.
+        </p>
+        <p>
+            <strong>KARÜN</strong> Es nuestra marca de anteojos favorita a nivel nacional. Sus modelos son la mezcla perfecta de rigurosidad, sofisticación y trabajo artesanal. Todo lo que producen está hecho con materiales primas certificadas de sustentabilidad.
+        </p>
+        <p>
+            <strong>SURO RIGEN</strong> Cuando otros se cubrían de metal para evitar ser dañados en la guerra, los pueblos latinoamericanos recurrían a la protección divina, la magia y los amuletos para enfrentar la adversidad.
+        </p>
+        <p>
+            <strong>BAZAR LA PASIÓN</strong> Pocos son las marcas que pueden jactarse de crear elegantes diseños a través de una verdadera búsqueda de la sustentabilidad.
+        </p>
+        </div>
+          
+    <img src="fotosvarias.png" class="editor-img" style="max-width: 500px; min-width: 300px; display: block; margin: 0 auto;">       
+
+    <footer>
+        <p class="footer">&copy; 2024 Revista. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
