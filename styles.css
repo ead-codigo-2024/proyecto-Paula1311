@@ -1,26 +1,35 @@
 /* Reset de estilos básicos */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
     font-family: "Cormorant Garamond", serif;
     font-size: 18px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Estilo global para los párrafos */
 p {
-    line-height: 1.8;
     color: #333;
     margin-bottom: 20px;
     text-align: left;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
+/* Estilos específicos */
 .firma {
     text-align: center;
 }
 
-/* Estilo del header */
 header {
     background-color: #391131;
     color: white;
@@ -39,10 +48,9 @@ header {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
-/* Efecto hover solo para el enlace 'Home' */
 .home-link:hover {
     color: #f9674d;
     font-weight: bold;
@@ -78,24 +86,22 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 150px;
+    font-size: 8vw;
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 4vw;
 }
 
 .hero-text h1 {
     margin-bottom: 10px;
 }
 
-.subtitulo{
-    font-size: 40px;
-
+.subtitulo {
+    font-size: 2.5vw;
 }
 
 /* Estilo de la cuadrícula de artículos */
-
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -105,12 +111,13 @@ h2 {
 }
 
 .article-card {
-    text-align: center; /* Esto centra el contenido dentro del div */
+    text-align: center;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
+
 .article-card img {
     max-width: 100%;
     border-radius: 10px;
@@ -125,7 +132,6 @@ h2 {
     padding: 15px 0;
     margin-top: 40px;
     line-height: 1.6;
-    
 }
 
 /* Sección de contenido */
@@ -133,7 +139,6 @@ h2 {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    line-height: 1.8;
     color: #333;
 }
 
@@ -146,8 +151,8 @@ h2 {
     text-align: right;
 }
 
-
 /* Responsivo */
+/* Pequeños */
 @media (max-width: 300px) {
     .hero-text {
         font-size: 2.5vw;
@@ -158,7 +163,7 @@ h2 {
         padding: 5%;
     }
     .content p, .content2 p {
-        font-size: 2.2vw;
+        font-size: 3.5vw;
     }
     h1 {
         font-size: 7vw;
@@ -168,7 +173,7 @@ h2 {
     }
 }
 
-/* Medianas */
+/* Medianos */
 @media (min-width: 300px) and (max-width: 1080px) {
     .hero-text {
         font-size: 3vw;
@@ -181,8 +186,8 @@ h2 {
     h2 {
         font-size: 5vw;
     }
-    p {
-        font-size: 2.5vw;
+    .content p, .content2 p {
+        font-size: 2.8vw;
     }
     .nav-links {
         display: none;
@@ -204,8 +209,10 @@ h2 {
     h2 {
         font-size: 3.5vw;
     }
+    .content p, .content2 p {
+        font-size: 1.5vw;
+    }
 }
-
 
 /* Menú de hamburguesa */
 .menu-toggle {
@@ -236,4 +243,3 @@ h2 {
         display: flex;
     }
 }
-
