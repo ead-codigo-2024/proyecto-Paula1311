@@ -149,42 +149,40 @@ h2 {
 
 /* Responsivo */
 @media (max-width: 300px) {
-    .content, .content2 {
-        padding: 10px;
-    }
-    .content p, .content2 p {
-        font-size: 0.9rem;
-    }
     .hero-text {
-        padding: 15px;
-        font-size: 1rem;
+        font-size: 2.5vw;
+        padding: 5%;
         width: 90%;
     }
+    .content, .content2 {
+        padding: 5%;
+    }
+    .content p, .content2 p {
+        font-size: 2.2vw;
+    }
     h1 {
-        font-size: 30px;
+        font-size: 7vw;
     }
     h2 {
-        font-size: 25px;
+        font-size: 8vw;
     }
-
-    
 }
 
 /* Medianas */
 @media (min-width: 300px) and (max-width: 1080px) {
     .hero-text {
-        padding: 20px;
-        font-size: 1.5rem;
+        font-size: 3vw;
+        padding: 5%;
         width: 70%;
     }
     h1 {
-        font-size: 80px;
+        font-size: 7vw;
     }
     h2 {
-        font-size: 40px;
+        font-size: 5vw;
     }
     p {
-        font-size: 1rem;
+        font-size: 2.5vw;
     }
     .nav-links {
         display: none;
@@ -194,19 +192,20 @@ h2 {
 }
 
 /* Grandes */
-@media (min-width: 1080px) {}
+@media (min-width: 1080px) {
     .hero-text {
-        padding: 30px;
-        font-size: 2rem;
+        font-size: 1.8vw;
+        padding: 3%;
         width: 60%;
     }
     h1 {
-        font-size: 120px;
+        font-size: 6vw;
     }
     h2 {
-        font-size: 60px;
+        font-size: 3.5vw;
     }
-   
+}
+
 
 /* Menú de hamburguesa */
 .menu-toggle {
