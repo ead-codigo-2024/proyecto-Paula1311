@@ -154,7 +154,7 @@ h2 {
 
 /* Responsivo */
 /* Pequeños */
-@media (max-width: 300px) {
+@media (min-width: 300px) (max-width: 500px) {
     .hero-text {
         font-size: 2.5vw;
         padding: 5%;
@@ -164,7 +164,7 @@ h2 {
         padding: 5%;
     }
     .content p, .content2 p {
-        font-size: 5vw;
+        font-size: 8vw;
     }
     h1 {
         font-size: 7vw;
@@ -178,7 +178,7 @@ h2 {
 }
 
 /* Medianos */
-@media (min-width: 300px) and (max-width: 1080px) {
+@media (min-width: 500px) and (max-width: 1080px) {
     .hero-text {
         font-size: 3vw;
         padding: 5%;
@@ -191,7 +191,7 @@ h2 {
         font-size: 5vw;
     }
     .content p, .content2 p {
-        font-size: 3vw;
+        font-size: 5vw;
     }
     .nav-links {
         display: none;
@@ -214,7 +214,7 @@ h2 {
         font-size: 6vw;
     }
     h2 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .content p, .content2 p {
         font-size: 1.5vw;
