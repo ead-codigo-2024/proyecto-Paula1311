@@ -119,7 +119,8 @@ h2 {
 }
 
 .article-card img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -153,7 +154,7 @@ h2 {
 
 /* Responsivo */
 /* Pequeños */
-@media (min-width: 300px) {
+@media (max-width: 300px) {
     .hero-text {
         font-size: 2.5vw;
         padding: 5%;
@@ -163,13 +164,16 @@ h2 {
         padding: 5%;
     }
     .content p, .content2 p {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     h1 {
         font-size: 7vw;
     }
     h2 {
         font-size: 8vw;
+    }
+    .article-card img {
+        width: 90%;
     }
 }
 
@@ -187,12 +191,15 @@ h2 {
         font-size: 5vw;
     }
     .content p, .content2 p {
-        font-size: 2.8vw;
+        font-size: 3vw;
     }
     .nav-links {
         display: none;
         flex-direction: column;
         text-align: center;
+    }
+    .article-card img {
+        width: 95%;
     }
 }
 
@@ -211,6 +218,9 @@ h2 {
     }
     .content p, .content2 p {
         font-size: 1.5vw;
+    }
+    .article-card img {
+        width: 100%;
     }
 }
 
