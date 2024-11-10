@@ -10,7 +10,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif; /* Aplicar la misma tipografía en todo el sitio */
     font-size: 18px;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
@@ -57,7 +57,6 @@ header {
     text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     margin-bottom: 40px;
@@ -80,7 +79,6 @@ header {
 }
 
 h1, h2 {
-    font-family: "Cormorant SC", serif;
     font-weight: 300;
     text-align: center;
 }
@@ -120,7 +118,7 @@ h2 {
 
 .article-card img {
     width: 100%;
-    height: 200;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -147,25 +145,17 @@ h2 {
     text-align: center;
 }
 
-.content2 {
-    font-family: 'Arvo', sans-serif;
-    text-align: right;
-}
-
 /* Responsivo */
-/* Pequeños */
 @media (min-width: 300px) (max-width: 500px) {
     .hero-text {
         font-size: 2.5vw;
         padding: 5%;
         width: 90%;
     }
-    .content, .content2 {
-        padding: 5%;
-    }
     .content p, .content2 p {
         font-size: 8vw;
     }
+
     h1 {
         font-size: 7vw;
     }
