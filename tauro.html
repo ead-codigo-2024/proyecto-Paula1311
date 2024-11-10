@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Tauro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <br>
+            <img src="logo bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
+            <br><br>
+            <!-- Botón de menú hamburguesa -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="editorial.html" class="home-link">Editorial</a></li>
+                <li><a href="elestilo.html" class="home-link">El Estilo</a></li>
+                <li><a href="icono.html" class="home-link">Icono</a></li>
+                <li><a href="moda.html" class="home-link">Moda</a></li>
+                <li><a href="agenda.html" class="home-link">Agenda</a></li>
+                <li><a href="lista.html" class="home-link">La LISTA</a></li>
+                <li><a href="horoscopo.html" class="home-link">Horóscopo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="tauro_background.jpg" alt="Fondo Tauro">
+        <div class="hero-text">
+            <h2>Tauro - El Persistente</h2>
+        </div>
+    </section>
+
+    <!-- Sección de Tauro -->
+    <section class="content">
+        <img src="tauro_symbol.png" alt="Símbolo de Tauro" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h3>20 de abril - 20 de mayo</h3>
+
+        <p>
+            <strong>Tauro</strong> es el segundo signo del zodiaco y está regido por Venus, el planeta de la belleza y el amor. Los taurinos son conocidos por su paciencia, determinación y enfoque práctico hacia la vida. Aman la estabilidad y suelen buscar la comodidad en todos los aspectos de su vida.
+        </p>
+        <p>
+            Este signo de tierra representa la conexión con el mundo físico, el valor de lo tangible y el aprecio por los placeres sensoriales. Tauro es perseverante, y su habilidad para mantenerse firme lo convierte en un apoyo confiable para los demás.
+        </p>
+        <p>
+            La temporada de Tauro invita a centrarse en el autocuidado, a disfrutar del momento presente y a valorar las cosas simples. Los nativos de Tauro suelen ser trabajadores incansables y dedicados, especialmente cuando tienen una meta en mente.
+        </p>
+        <p>
+            Para Tauro, la clave del éxito está en equilibrar su deseo de estabilidad con la capacidad de adaptarse al cambio cuando es necesario. Aunque valoran la rutina, los taurinos pueden encontrar una gran riqueza en la flexibilidad.
+        </p>
+
+        <p><strong>Elemento:</strong> Tierra</p>
+        <p><strong>Cualidad:</strong> Fijo</p>
+        <p><strong>Planeta regente:</strong> Venus</p>
+
+        <p><strong>Compatibilidad:</strong> Virgo, Capricornio, Cáncer y Piscis</p>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Astrología y Horóscopos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

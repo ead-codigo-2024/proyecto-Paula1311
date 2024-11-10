@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Escorpio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo_bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="editorial.html" class="home-link">Editorial</a></li>
+                <li><a href="elestilo.html" class="home-link">El Estilo</a></li>
+                <li><a href="icono.html" class="home-link">Icono</a></li>
+                <li><a href="moda.html" class="home-link">Moda</a></li>
+                <li><a href="agenda.html" class="home-link">Agenda</a></li>
+                <li><a href="lista.html" class="home-link">La LISTA</a></li>
+                <li><a href="horoscopo.html" class="home-link">Horóscopo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <img src="escorpio_background.jpg" alt="Fondo Escorpio">
+        <div class="hero-text">
+            <h2>Escorpio - El Intenso</h2>
+        </div>
+    </section>
+
+    <section class="content">
+        <img src="escorpio_symbol.png" alt="Símbolo de Escorpio" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h3>23 de octubre - 21 de noviembre</h3>
+
+        <p><strong>Escorpio</strong> es el octavo signo del zodiaco y está regido por Plutón y Marte, planetas de la transformación y la energía. Los escorpianos son conocidos por su intensidad, su pasión y su capacidad para transformar situaciones difíciles.</p>
+        <p>Este signo de agua simboliza el misterio y la profundidad emocional. Escorpio es perseverante y siempre busca la verdad oculta en cada situación.</p>
+        
+        <p><strong>Elemento:</strong> Agua</p>
+        <p><strong>Cualidad:</strong> Fijo</p>
+        <p><strong>Planeta regente:</strong> Plutón (y Marte)</p>
+        <p><strong>Compatibilidad:</strong> Cáncer, Piscis, Virgo y Capricornio</p>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Astrología y Horóscopos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

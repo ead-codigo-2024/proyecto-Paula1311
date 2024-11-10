@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Sagitario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo_bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="editorial.html" class="home-link">Editorial</a></li>
+                <li><a href="elestilo.html" class="home-link">El Estilo</a></li>
+                <li><a href="icono.html" class="home-link">Icono</a></li>
+                <li><a href="moda.html" class="home-link">Moda</a></li>
+                <li><a href="agenda.html" class="home-link">Agenda</a></li>
+                <li><a href="lista.html" class="home-link">La LISTA</a></li>
+                <li><a href="horoscopo.html" class="home-link">Horóscopo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <img src="sagitario_background.jpg" alt="Fondo Sagitario">
+        <div class="hero-text">
+            <h2>Sagitario - El Aventurero</h2>
+        </div>
+    </section>
+
+    <section class="content">
+        <img src="sagitario_symbol.png" alt="Símbolo de Sagitario" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h3>22 de noviembre - 21 de diciembre</h3>
+
+        <p><strong>Sagitario</strong> es el noveno signo del zodiaco y está regido por Júpiter, el planeta de la expansión y la sabiduría. Los sagitarianos son conocidos por su espíritu aventurero, su optimismo y su amor por la libertad.</p>
+        <p>Este signo de fuego representa la exploración y la búsqueda de la verdad. Sagitario siempre está en movimiento, en busca de nuevas experiencias y conocimientos.</p>
+        
+        <p><strong>Elemento:</strong> Fuego</p>
+        <p><strong>Cualidad:</strong> Mutable</p>
+        <p><strong>Planeta regente:</strong> Júpiter</p>
+        <p><strong>Compatibilidad:</strong> Aries, Leo, Libra y Acuario</p>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Astrología y Horóscopos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

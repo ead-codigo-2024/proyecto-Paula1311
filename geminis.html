@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Géminis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo_bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
+            <!-- Botón de menú hamburguesa -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="editorial.html" class="home-link">Editorial</a></li>
+                <li><a href="elestilo.html" class="home-link">El Estilo</a></li>
+                <li><a href="icono.html" class="home-link">Icono</a></li>
+                <li><a href="moda.html" class="home-link">Moda</a></li>
+                <li><a href="agenda.html" class="home-link">Agenda</a></li>
+                <li><a href="lista.html" class="home-link">La LISTA</a></li>
+                <li><a href="horoscopo.html" class="home-link">Horóscopo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="geminis_background.jpg" alt="Fondo Géminis">
+        <div class="hero-text">
+            <h2>Géminis - El Comunicador</h2>
+        </div>
+    </section>
+
+    <!-- Sección de Géminis -->
+    <section class="content">
+        <img src="geminis_symbol.png" alt="Símbolo de Géminis" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h3>21 de mayo - 20 de junio</h3>
+
+        <p>
+            <strong>Géminis</strong> es el tercer signo del zodiaco y está regido por Mercurio, el planeta de la comunicación y la mente. Los geminianos son conocidos por su curiosidad, adaptabilidad y su habilidad para interactuar con todo tipo de personas.
+        </p>
+        <p>
+            Este signo de aire representa el intercambio de ideas y el aprendizaje constante. Géminis es un signo versátil, con una gran capacidad para ver múltiples perspectivas, lo que lo convierte en un comunicador nato y un pensador ágil.
+        </p>
+        <p>
+            La temporada de Géminis es ideal para abrirse al conocimiento, explorar nuevos intereses y conectar con los demás. Los nativos de Géminis suelen ser muy sociables y disfrutan de las conversaciones profundas y significativas.
+        </p>
+        <p>
+            Para Géminis, la clave del éxito está en equilibrar su deseo de variedad con un enfoque claro, evitando la dispersión. Aunque le encanta la novedad, también puede beneficiarse al comprometerse con un propósito específico.
+        </p>
+
+        <p><strong>Elemento:</strong> Aire</p>
+        <p><strong>Cualidad:</strong> Mutable</p>
+        <p><strong>Planeta regente:</strong> Mercurio</p>
+
+        <p><strong>Compatibilidad:</strong> Libra, Acuario, Aries y Leo</p>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Astrología y Horóscopos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

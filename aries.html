@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Aries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <br>
+            <img src="logo bazar.png" alt="Logo de Harper's Bazaar" width="300" height="60">
+            <br><br>
+            <!-- Botón de menú hamburguesa -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="editorial.html" class="home-link">Editorial</a></li>
+                <li><a href="elestilo.html" class="home-link">El Estilo</a></li>
+                <li><a href="icono.html" class="home-link">Icono</a></li>
+                <li><a href="moda.html" class="home-link">Moda</a></li>
+                <li><a href="agenda.html" class="home-link">Agenda</a></li>
+                <li><a href="lista.html" class="home-link">La LISTA</a></li>
+                <li><a href="horoscopo.html" class="home-link">Horóscopo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="aries_background.jpg" alt="Fondo Aries">
+        <div class="hero-text">
+            <h2>Aries - El Iniciador</h2>
+        </div>
+    </section>
+
+    <!-- Sección de Aries -->
+    <section class="content">
+        <img src="aries_symbol.png" alt="Símbolo de Aries" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h3>21 de marzo - 19 de abril</h3>
+
+        <p>
+            <strong>Aries</strong> es el primer signo del zodiaco y está regido por Marte, el planeta de la energía y la acción. Los arianos se destacan por su valentía, entusiasmo y espíritu aventurero. Siempre listos para enfrentar nuevos desafíos, no temen tomar la iniciativa y ser pioneros en sus proyectos.
+        </p>
+        <p>
+            Este signo de fuego simboliza el poder del renacimiento y el impulso de comenzar. Aries tiene una energía inagotable, y su naturaleza competitiva los convierte en líderes naturales que inspiran a otros con su pasión y determinación.
+        </p>
+        <p>
+            La temporada de Aries es un momento ideal para iniciar proyectos, renovar la energía personal y lanzarse a nuevas experiencias. Los nativos de Aries son conocidos por ser sinceros y directos, y su enfoque honesto a menudo los coloca en situaciones que requieren valor y honestidad.
+        </p>
+        <p>
+            Para Aries, la clave del éxito radica en equilibrar su energía, evitando impulsividad. El crecimiento personal llegará cuando aprendan a ser pacientes y a escuchar tanto como actúan.
+        </p>
+
+        <p><strong>Elemento:</strong> Fuego</p>
+        <p><strong>Cualidad:</strong> Cardinal</p>
+        <p><strong>Planeta regente:</strong> Marte</p>
+
+        <p><strong>Compatibilidad:</strong> Leo, Sagitario, Géminis y Acuario</p>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Astrología y Horóscopos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
